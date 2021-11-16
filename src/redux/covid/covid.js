@@ -1,33 +1,84 @@
-const FETCH_COVID_DATA = 'covid-data-app/covid/FETCH_COVID_DATA';
-const FILTER_DATA = 'covid-data-app/covid/FETCH_DATA';
+import { fetchCountriesFromApi, fetchCountriesFromApiCatch } from '../../helpers/getData';
+import fetchHistoryFromApi from '../../helpers/getHistory';
 
-export const fetchCovidData = (payload) => ({
-  type: FETCH_COVID_DATA,
-  payload,
-});
+const LOAD_DATA = 'covid-data-app/covid/LOAD_DATA';
+const SELECT_DATA = 'covid-data-app/covid/SELECT_DATA';
+const HISTORY_DATA = 'covid-data-app/covid/HISTORY_DATA';
+const DATA_LOADING = 'covid-data-app/covid/DATA_LOADING';
 
-export const fetchFromApi = () => async (dispatch) => {
-  const today = new Date().toISOString().slice(0, 10);
-  const response = await fetch(`https://api.covid19tracking.narrativa.com/api/${today}`);
-  const data = await response.json();
-  dispatch(fetchCovidData(data));
+const initialState = {
+  countries: {},
 };
 
-export const filterData = (payload) => ({
-  type: FILTER_DATA,
-  payload,
-});
-
-const covidReducer = (state = [], action) => {
+const covidReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_COVID_DATA:
-      return [...state, action.payload.dates];
+    case LOAD_DATA:
+      return {
+        ...state,
+        countries: action.payload.countries,
+        total: action.payload.total,
+        loading: false,
+      };
+    case SELECT_DATA:
+      return {
+        ...state,
+        currentCountry: action.payload,
+        loading: false,
+      };
 
-    case FILTER_DATA:
-      return action.payload;
+    case HISTORY_DATA:
+      return {
+        ...state,
+        currentHistory: action.payload,
+        loading: false,
+      };
+    case DATA_LOADING:
+      return {
+        ...state,
+        loading: true,
+      };
     default:
       return state;
   }
 };
 
-export { covidReducer };
+const loadData = (payload) => ({
+  type: LOAD_DATA,
+  payload,
+});
+
+const selectData = (payload) => ({
+  type: SELECT_DATA,
+  payload,
+});
+
+const loadHistoryData = (payload) => ({
+  type: HISTORY_DATA,
+  payload,
+});
+const dataLoading = (payload) => ({
+  type: DATA_LOADING,
+  payload,
+});
+
+const loadDataThunk = () => async (dispatch) => {
+  try {
+    const data = await fetchCountriesFromApi();
+    dispatch(loadData(data));
+  } catch (e) {
+    const data = await fetchCountriesFromApiCatch();
+    dispatch(loadData(data));
+  }
+};
+
+const loadHistoryThunk = (country) => async (dispatch) => {
+  const data = await fetchHistoryFromApi(country);
+  const { dates } = data;
+  if (dates) {
+    dispatch(loadHistoryData(dates));
+  }
+};
+
+export {
+  covidReducer, loadHistoryThunk, loadDataThunk, loadData, selectData, dataLoading,
+};

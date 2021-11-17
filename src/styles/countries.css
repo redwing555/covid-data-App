@@ -1,19 +1,66 @@
 .countries-list{
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-right: 10px;
-    margin-left: -20px;
+    margin-top: 0;
+    margin-left: -2.5rem;
+
+    
+    
 
     
 }
 
 .countries-list li{
-    flex: 50%;
-    margin-bottom: 5px;
+    flex:10rem;
     
-
-   
+    border: 0.5px solid lightseagreen;
+    
+  
 }
+
+.countries-list li:nth-child(1),
+.countries-list li:nth-child(n+3)
+{
+
+    background-color: rgb(174, 174, 255);
+  
+}
+.countries-list li:nth-child(2),
+.countries-list li:nth-child(n+2)
+{
+
+    background-color: rgb(141, 141, 253);
+  
+}
+
+
+.header-wrapper{
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+
+.world-map{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    transform: scale(1.2);
+    
+}
+
+
+.world-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.world-cases{
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+

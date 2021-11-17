@@ -22,17 +22,29 @@ const Countries = ({
 
   return (
     <div>
-      <span>
-        {' '}
-        {total && Intl.NumberFormat('de-DE').format(total.today_confirmed) }
-      </span>
+      <div className="header-wrapper">
+        <div className="world-header">
+          <img className="world-map" src="/worldmap.svg" alt="world map" />
+        </div>
+        <div className="world-info">
+          <span className="world-cases">The world has </span>
+          <span>
+            {' '}
+            {total && Intl.NumberFormat('de-DE').format(total.today_confirmed) }
+          </span>
+          <span className="world-cases">Coronavirus Cases </span>
+
+        </div>
+
+      </div>
+
       <Query handleChange={handleChange} />
       {loading && <span>...loading</span> }
       <ul className="countries-list">
         {filtered && filtered.map((key) => (
           (key !== 'Casablanca')
               && (
-              <li key={key}>
+              <li key={key} className="countries">
                 <Country
                   country={key}
                   totalConfirmed={countries[key].today_confirmed}

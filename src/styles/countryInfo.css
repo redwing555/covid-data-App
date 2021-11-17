@@ -1,0 +1,38 @@
+.table-infos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.date{
+    float: left;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+.date-value{
+    float: right;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+.table-infos li{
+
+    border-bottom: 1px solid rgb(100, 100, 253);
+    border-top: 1px solid rgb(100, 100, 253);
+    margin-left: -3rem;
+    padding: 1rem;
+    
+    
+}
+
+.metric{
+    float: left;
+    margin-left: 1rem;
+    font-weight: bolder;
+
+}
+.metric-value{
+    float: right;
+    margin-right: 2rem;
+    font-weight: bold;
+}

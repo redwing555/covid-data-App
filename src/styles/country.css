@@ -7,20 +7,50 @@
 
 .country{
     border: none;
-    background-color: rgb(174, 174, 255);
-    padding: 1rem;
-    width: 9.5rem;
+    
+    background-color: transparent;
+    
+    width: 185px;
     height: 15rem;
-    margin-right: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+
     
 }
 
+/* 
+
+.country-wrapper:nth-of-type(2) {
+  background-color: pink;
+}
+
+.country-wrapper:nth-of-type(4) {
+    background-color: rgb(174, 174, 255);
+  }
+
+
+ */
+
+.country-map{
+    opacity: 0.6;
+    margin-left: 1rem;
+}
+
 .country-name{
-    font-weight:bold ;
+    font-weight:bolder ;
+    font-size: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    
 }
 
 .total-confirmed{
     font-weight:bold ;
+    margin-left: 3rem;
+}
+
+.info-icon{
+    transform: translate(8rem, -8rem);
+    
 }

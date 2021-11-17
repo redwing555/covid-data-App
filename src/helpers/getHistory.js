@@ -1,4 +1,4 @@
-const fetchHistoryFromApi = () => async (country) => {
+const fetchHistoryFromApi = async (country) => {
   const today = new Date();
 
   const startDateObject = {
@@ -27,5 +27,4 @@ const fetchHistoryFromApi = () => async (country) => {
   const data = await response.json();
   return data;
 };
-
 export default fetchHistoryFromApi;

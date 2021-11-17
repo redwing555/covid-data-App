@@ -2,8 +2,8 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import Proptypes from 'prop-types';
 
-const Plot = ({ plotData, title }) => {
-  const config = {
+const LineChart = ({ plotData, title }) => {
+  const options = {
     plugins: {
       legends: {
         labels: {
@@ -53,19 +53,22 @@ const Plot = ({ plotData, title }) => {
     ],
   };
 
+  console.log(data);
+
   return (
     <>
       <div>
+        <span>hello</span>
         <span> Last weeks data</span>
       </div>
-      <Line data={data} options={config} />
+      <Line data={data} options={options} />
     </>
   );
 };
 
-Plot.propTypes = {
+LineChart.propTypes = {
   plotData: Proptypes.arrayOf(Proptypes.number).isRequired,
   title: Proptypes.string.isRequired,
 };
 
-export default Plot;
+export default LineChart;

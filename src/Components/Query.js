@@ -1,10 +1,11 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import '../styles/query.css';
 
 const Query = ({ handleChange }) => (
-  <form>
-    <span>By country</span>
-    <input type="text" placeholder="search by country name" onChange={handleChange} />
+  <form className="form">
+    <span className="search-by">Search country</span>
+    <input className="input-search" type="text" placeholder="search by country name" onChange={handleChange} />
   </form>
 );
 

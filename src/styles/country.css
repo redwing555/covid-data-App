@@ -1,0 +1,26 @@
+.country-data{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    
+}
+
+.country{
+    border: none;
+    background-color: rgb(174, 174, 255);
+    padding: 1rem;
+    width: 9.5rem;
+    height: 15rem;
+    margin-right: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+
+.country-name{
+    font-weight:bold ;
+    margin-bottom: 1rem;
+}
+
+.total-confirmed{
+    font-weight:bold ;
+}

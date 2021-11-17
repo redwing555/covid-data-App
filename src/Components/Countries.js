@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Country from './Country';
 import Query from './Query';
+import '../styles/countries.css';
 
 const Countries = ({
   countries, total, loading, handleClick,
@@ -27,9 +28,9 @@ const Countries = ({
       </span>
       <Query handleChange={handleChange} />
       {loading && <span>...loading</span> }
-      <ul>
+      <ul className="countries-list">
         {filtered && filtered.map((key) => (
-          (key !== 'Kosovo')
+          (key !== 'Casablanca')
               && (
               <li key={key}>
                 <Country

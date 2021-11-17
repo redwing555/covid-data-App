@@ -1,0 +1,19 @@
+.countries-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: -20px;
+
+    
+}
+
+.countries-list li{
+    flex: 50%;
+    margin-bottom: 5px;
+    
+
+   
+}

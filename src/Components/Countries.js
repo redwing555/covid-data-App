@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { FaVirus } from 'react-icons/fa';
 import Country from './Country';
 import Query from './Query';
+
 import '../styles/countries.css';
 
 const Countries = ({
@@ -28,21 +30,22 @@ const Countries = ({
         </div>
         <div className="world-info">
           <span className="world-cases">The world has </span>
-          <span>
+          <span className="world-cases-value">
             {' '}
             {total && Intl.NumberFormat('de-DE').format(total.today_confirmed) }
           </span>
           <span className="world-cases">Coronavirus Cases </span>
+          <FaVirus className="icon-virus" />
 
         </div>
 
       </div>
 
       <Query handleChange={handleChange} />
-      {loading && <span>...loading</span> }
+      {loading && <span><FaVirus className="virus" /></span> }
       <ul className="countries-list">
         {filtered && filtered.map((key) => (
-          (key !== 'Casablanca')
+          (key !== 'pistolet')
               && (
               <li key={key} className="countries">
                 <Country
@@ -54,7 +57,14 @@ const Countries = ({
               )
         ))}
       </ul>
-      {!filterCountries.length && !loading && <span>Sorry</span>}
+      {!filterCountries.length && !loading && (
+      <span>
+        Ooops No countries !
+        {' '}
+        <FaVirus className="virus" />
+        {' '}
+      </span>
+      )}
     </div>
   );
 };

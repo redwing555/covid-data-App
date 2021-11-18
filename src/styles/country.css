@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    gap: 0.5rem;
+    
+    
     
 }
 
@@ -11,7 +14,7 @@
     background-color: transparent;
     
     width: 185px;
-    height: 15rem;
+    height: 17rem;
 
 
 
@@ -33,7 +36,10 @@
 
 .country-map{
     opacity: 0.6;
-    margin-left: 1rem;
+    margin-right: 1.5rem;
+    transform: scale(1.1);
+    margin-top: 0.5rem;
+    
 }
 
 .country-name{
@@ -43,6 +49,7 @@
     text-align: center;
     margin-left: 1rem;
     color: white;
+    font-family: 'lato', sans-serif;
     
 }
 
@@ -50,9 +57,30 @@
     font-weight:bold ;
     margin-left: 3rem;
     color: white;
+    font-family: 'lato', sans-serif;
+
+    
 }
 
 .info-icon{
-    transform: translate(8rem, -7.5rem);
+    transform: translate(7rem, -8rem);
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+@media (min-width:801px) {
+
+    .total-confirmed{
+        margin-left: 4rem;
+        width: 10rem;
+    
+        
+    }
+
+    .country-name{
+        width: 12rem;
+        
+    }
     
 }

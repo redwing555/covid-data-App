@@ -19,6 +19,10 @@ input[type="text"]{
     font-weight: bold;
     font-size: 1rem;
     color: white;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    font-family: 'lato', sans-serif;
+    letter-spacing: 2px;
 }
 
 ::placeholder{
@@ -26,6 +30,7 @@ input[type="text"]{
     font-weight: lighter;
     font-size: 1rem;
     color: white;
+    font-family: 'lato', sans-serif;
 
 }
 
@@ -39,8 +44,44 @@ input[type="text"]{
 
     padding: 0.5rem;
     margin-left: -0.5rem;
-    margin-top: -1.5rem;
+    margin-top: 0.8rem;
     background-color: #35548B;
+    margin-bottom: 1rem;
 }
+
+@media (min-width:801px)  { 
+
+    
+    .input-search{
+        
+        width: 15rem;
+        margin-left: 5rem;
+        padding-left: 5rem;
+        width: 50rem;
+        height: 3rem;
+        
+        
+       
+        
+    }
+    
+    input[type="text"]{
+        
+    }
+ 
+   
+    
+    .form{
+    
+        padding: 1rem;
+       margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+  
+   
+
+
+      
+ }
     
     

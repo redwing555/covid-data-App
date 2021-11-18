@@ -13,6 +13,11 @@ nav{
 
 .location{
     color: white;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+    font-size:2rem;
+    z-index: 10;
+
    
     
 }
@@ -28,16 +33,12 @@ nav{
     background-color: transparent;
     color: white;
     border: none;
-    font-weight: bold;
-    font-size: large;
+    font-weight: 2rem;
+    font-size: 2rem;
+    font-family: 'lato', sans-serif;
     
 }
 
-.back .fas{
-    font-size: 1.5rem;
-    
-   
-}
 
 .icons{
     display: flex;

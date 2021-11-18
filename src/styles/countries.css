@@ -14,24 +14,28 @@
 .countries-list li{
     flex:10rem;
     
-    border: 0.5px solid lightgray;
     
-    
-  
-}
-
-.countries-list li:nth-child(1)
-{
-
-    background-color: #4067AE;
-  
-}
-.countries-list li:nth-child(2)
-{
-
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #4268AF;
+    
+    
   
 }
+
+.countries-list li:nth-child(4n),
+.countries-list li:nth-child(4n+1)
+
+{
+
+    background-color: #5889E6;
+  
+}
+
+
+
+
+
 
 
 
@@ -46,9 +50,9 @@
 .world-map{
     width: 10rem;
     height: 10rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     opacity: 0.7;
-    transform: scale(1.2);
+    transform: scale(2);
     
 }
 
@@ -64,7 +68,40 @@
 .world-cases{
     font-weight: bolder;
     margin-right: 1rem;
+    font-family: 'lato', sans-serif;
 }
+
+.world-cases-value{
+    font-family: 'lato', sans-serif;
+    font-weight: bolder;
+    margin-right: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+
+.icon-virus{
+    animation: rotate 1.5s linear infinite; 
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    transition-duration: 0.1s;
+    transition-property: transform;
+  }
+  @keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  
+  
+  /* SPINNER JUST FOR DEMO */
+  .spinner{
+    display:inline-block; 
+    border-radius: 50%;
+    box-shadow: inset -2px 0 0 2px #0bf;
+  }
+
+
 
 @media (min-width:801px)  { 
 
@@ -76,7 +113,7 @@
     }
 
     .world-map{
-        transform: scale(3);
+        transform: scale(4);
         margin-top: 3rem;
         opacity: 0.5;
         padding-left: 3rem;
@@ -102,28 +139,37 @@
     
     .countries-list li{
         flex:40%;
-        border: 0.5px solid lightgray;
-        padding: 3rem;
+       
+        padding: 1rem;
+        cursor: pointer;
+        
+        /* padding: 3rem; */
 
     }
 
     .country-map{
         transform: scale(2.5);
-        margin-top: 3rem;
+        transform: rotate(deg);
+        margin-top: 4rem;
+        margin-left: 7rem;
+        
     }
 
     .country-data{
         margin-left: 20rem;
         margin-bottom: 5rem;
+        padding-bottom: 2rem;
         
     }
 
     .country-name{
-       margin-top: -2rem;
+       margin-top: -3rem;
+       padding-bottom: 1rem;
+       margin-left: 4rem;
     }
 
     .info-icon{
-        transform: translate(8rem, -12rem);
+        transform: translate(20rem, -11rem);
         
     }
       

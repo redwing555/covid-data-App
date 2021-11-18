@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {
   useHistory, Route, Switch, useRouteMatch,
 } from 'react-router-dom';
+import { FaVirus } from 'react-icons/fa';
+import { BiChevronRightCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import LineChart from './Plot';
@@ -92,13 +94,13 @@ const CountryInfo = ({ current, image }) => {
         </div>
         <div className="country-header-info">
           <span className="world-cases">{current}</span>
-          <span>
+          <span className="country-total">
             {' '}
             {total && Intl.NumberFormat('de-DE').format(total)}
             {' '}
-            Cases
 
           </span>
+          <span className="world-cases">Cases</span>
 
         </div>
 
@@ -109,11 +111,7 @@ const CountryInfo = ({ current, image }) => {
           <div className="data-of-wrapper">
             <span className="data-of">
               {' '}
-              Stats of
-              {' '}
-              {country.date}
-              {' '}
-              for
+              Covid Stats of
               {' '}
               {current}
               {' '}
@@ -125,7 +123,12 @@ const CountryInfo = ({ current, image }) => {
               <div className="date">Date</div>
               <div className="date-value">{country.date}</div>
             </li>
-            {loading && <span>Getting data for you ... </span>}
+            {loading && (
+            <span>
+              <FaVirus className="virus" />
+              {' '}
+            </span>
+            )}
             {!loading && rows.map((row) => (
 
               <li
@@ -140,6 +143,9 @@ const CountryInfo = ({ current, image }) => {
 
                 <div className="metric">{row.text}</div>
                 <div className="metric-value">{row.value}</div>
+                <div>
+                  <BiChevronRightCircle size={20} className="info-ic" color="white" />
+                </div>
               </li>
             ))}
           </ul>

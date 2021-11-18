@@ -2,7 +2,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .date{
@@ -10,6 +10,7 @@
     margin-left: 1rem;
     font-weight: bolder;
     color: white;
+    font-family: 'lato', sans-serif;
 
 }
 .date-value{
@@ -18,6 +19,7 @@
     font-weight: bold;
     color: white;
     background-color: transparent !important;
+    font-family: 'lato', sans-serif;
 }
 .table-infos li{
 
@@ -32,41 +34,60 @@
 .data-of{
     color: white;
     font-weight:500;
+    font-size: 1.5rem;
     word-spacing: 10px;
     margin-left: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: 'lato', sans-serif;
 
     
+}
+
+.country-details{
+    display: flex;
+    gap: 1rem;
 }
 
 .data-of-wrapper{
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     margin-left: 1rem;
+    font-family: 'lato', sans-serif;
     
 }
 
+
+.country-total{
+    font-family: 'lato', sans-serif;
+    color: black;
+}
 .country-header-info{
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     color: white;
     font-weight: bold;
+    z-index: 11;
 }
 
 .country-map-header{
     width: 10rem;
     height: 10rem;
-    margin-left: 1.5rem;
+    margin-left: 3.8rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     opacity: 0.7;
-    transform: scale(1.2);
+    transform: scale(1.7);
+    z-index: 0;
+
+
 }
 
 .table-infos li:nth-child(odd){
 
     
    background-color: #2D4573; 
+   
     
     
 }
@@ -78,25 +99,60 @@
       
 }
 
+.info-ic{
+    margin-left: 4.5rem;
+    
+}
+
 .metric{
-    float: left;
-    margin-left: 1rem;
+    
+    
     font-weight: bolder;
     background-color: transparent !important;
+    font-family: 'lato', sans-serif;
+    margin-left: 1rem;
 
 }
+.virus{
+   
+    
+    transition: 0.5s;
+    height: 4rem;
+    width: 4rem;
+    animation: cowmove 4s infinite;    
+    color: white;            
+  } 
+   
+  @keyframes cowmove{
+      0% {
+        transform: translateX(10px) rotateY(0deg);
+      }
+      49% {
+        transform: translateX(500px) rotateY(0deg);
+      }
+      50% {
+        transform: translateX(500px) rotateY(360deg);
+      }
+      100% {
+        transform: translateX(100px) rotateY(360deg);
+      }
+  }
 .metric-value{
-    float: right;
-    margin-right: 2rem;
+    text-align: center;
+    margin-left: 5rem;
+    
     font-weight: bold;
     background-color: transparent !important;
+    font-family: 'lato', sans-serif;
 }
 
 @media (min-width:801px)  { 
   
     .data-of{
-        margin-left: 25rem;
+        text-align: center;
         padding-top: 1rem;
+
+    
     }
 
     .data-of-wrapper{
@@ -110,14 +166,16 @@
         padding-left: 5rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        z-index: 11;
         
     }
 
     .country-map-header{
         width: 15rem;
         height: 15rem;
-        opacity: 0.7;
-        transform: scale(1.2);
+        opacity: 0.6;
+        transform: scale(2);
+        z-index: 0;
     }
 
     .country-header-info{
@@ -125,6 +183,43 @@
         margin-top: 10rem;
         transform: scale(2);
     }
+
+    .metric-value{
+        margin-right: 20rem;
+        font-size: 2rem;
+    }
+
+    .date-value{
+        margin-right: 20rem;
+        font-size: 2rem;
+    }
+
+    .date{
+        font-size: 2rem;
+        margin-left: 5rem;
+    }
+
+    .metric{
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .info-ic{
+        margin-right: 3rem;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1.5rem;
+        
+
+    }
+
+    .country-details{
+        display: flex;
+        gap: 19rem;
+    }
+    
+    
+    
 
 
       

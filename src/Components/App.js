@@ -7,6 +7,7 @@ import CountryInfo from './CountryInfo';
 import { dataLoading, loadDataThunk, selectData } from '../redux/covid/covid';
 import countriesNames from './countriesNames';
 import '../styles/app.css';
+import Footer from './Footer';
 
 function App() {
   const countries = useSelector((state) => state.covidReducer.countries);
@@ -34,6 +35,7 @@ function App() {
           <CountryInfo current={currentCntry} image={mapImg} />
         </Route>
       </Switch>
+      <Footer />
 
     </div>
   );

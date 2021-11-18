@@ -7,10 +7,26 @@
 
 .input-search{
     border: none;
-    width: 11rem;
+    width: 15rem;
+    margin-left: 2rem;
     height: 1.5rem;
-    border-radius: 10px;
+    background-color:#35548B ;
+   
     
+}
+
+input[type="text"]{
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+::placeholder{
+
+    font-weight: lighter;
+    font-size: 1rem;
+    color: white;
+
 }
 
 :focus {

@@ -50,14 +50,14 @@ const CountryInfo = ({ current, image }) => {
       text: 'Confirmed number of Death',
       value: country.today_deaths,
       url: 'confirmedDeaths',
-      category: 'confirmed_deaths',
+      category: 'today_deaths',
     },
     {
       id: 6,
       text: 'Confirmed recoveries',
       value: country.today_recovered,
-      url: 'ConfirmedRecoveries',
-      category: 'confirmed_recoveries',
+      url: 'confirmedRecoveries',
+      category: 'today_recovered',
     },
 
   ];
@@ -87,33 +87,37 @@ const CountryInfo = ({ current, image }) => {
     <div className="info-container">
       <div className="header-wrapper">
         <div className="world-header">
-          <img className="world-map" src={image} alt="world map" />
+          <img className="country-map-header" src={image} alt="world map" />
 
         </div>
-        <div className="world-info">
+        <div className="country-header-info">
           <span className="world-cases">{current}</span>
           <span>
             {' '}
             {total && Intl.NumberFormat('de-DE').format(total)}
+            {' '}
+            Cases
 
           </span>
-          <span className="world-cases">Cases</span>
 
         </div>
 
       </div>
 
-      <div>
-        <span>
-          {' '}
-          {country.date}
-          {' '}
-        </span>
-      </div>
       <Switch>
         <Route exact path={path}>
-          <div>
-            <span> Latest data </span>
+          <div className="data-of-wrapper">
+            <span className="data-of">
+              {' '}
+              Stats of
+              {' '}
+              {country.date}
+              {' '}
+              for
+              {' '}
+              {current}
+              {' '}
+            </span>
 
           </div>
           <ul className="table-infos">
@@ -130,7 +134,6 @@ const CountryInfo = ({ current, image }) => {
                 onClick={() => {
                   handleRoute(`${url}/${row.url}`);
                   handlePlotData(row.category);
-                  console.log(plotData);
                 }}
                 aria-hidden="true"
               >
@@ -142,15 +145,15 @@ const CountryInfo = ({ current, image }) => {
           </ul>
 
         </Route>
-        <Route exact path={`${path}/newDailyCases`}>
+        <Route plotData={plotData} exact path={`${path}/newDailyCases`}>
           <LineChart plotData={plotData} country={current} title="new Cases" />
         </Route>
-        <Route exact path={`${path}/newDailyDeaths`}>
+        <Route plotData={plotData} exact path={`${path}/newDailyDeaths`}>
           <LineChart plotData={plotData} country={current} title="new Deaths" />
         </Route>
-        <LineChart exact path={`${path}/newDailyRecovered`}>
+        <Route exact path={`${path}/newDailyRecovered`}>
           <LineChart plotData={plotData} country={current} title="new Recoveries" />
-        </LineChart>
+        </Route>
         <Route exact path={`${path}/confirmedCases`}>
           <LineChart plotData={plotData} country={current} title="today new Cases" />
         </Route>

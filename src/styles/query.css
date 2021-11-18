@@ -2,11 +2,15 @@
     font-weight: bold;
     margin-right: 2rem;
     margin-left: 1rem;
+    color: white;
 }
 
 .input-search{
     border: none;
-    background: rgb(206, 209, 255);
+    width: 11rem;
+    height: 1.5rem;
+    border-radius: 10px;
+    
 }
 
 :focus {
@@ -16,11 +20,11 @@
   }
 
 .form{
-    border-bottom: 0.5px solid lightseagreen;;
-    border-top: 0.5px solid lightseagreen;;
-    padding: 1rem;
-    margin-left: -1rem;
+
+    padding: 0.5rem;
+    margin-left: -0.5rem;
     margin-top: -1.5rem;
-    
-    
+    background-color: #35548B;
 }
+    
+    

@@ -11,33 +11,36 @@
     
 }
 
+
+
 .countries-list li{
     flex:10rem;
     
-    border: 0.5px solid lightseagreen;
+    border: 0.5px solid lightgray;
+    
     
   
 }
 
-.countries-list li:nth-child(1),
-.countries-list li:nth-child(n+3)
+.countries-list li:nth-child(1)
 {
 
-    background-color: rgb(174, 174, 255);
+    background-color: #4067AE;
   
 }
-.countries-list li:nth-child(2),
-.countries-list li:nth-child(n+2)
+.countries-list li:nth-child(2)
 {
 
-    background-color: rgb(141, 141, 253);
+    background-color: #4268AF;
   
 }
+
 
 
 .header-wrapper{
     display: flex;
     gap: 2rem;
+    background-color: #5889E5;
     
     
 }
@@ -57,6 +60,7 @@
     flex-direction: column;
     padding-top: 2rem;
     text-align: center;
+    color: white;
 }
 
 .world-cases{

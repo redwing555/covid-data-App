@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { BiChevronRightCircle } from 'react-icons/bi';
 import countriesNames from './countriesNames';
 import '../styles/country.css';
 
@@ -27,7 +27,7 @@ const Country = ({
       >
         <img className="country-map" alt="map" src={mapImg} width="100" height="100" />
         <div className="country-data">
-          <AiOutlineInfoCircle size={20} className="info-icon" />
+          <BiChevronRightCircle size={20} className="info-icon" color="white" />
           <h1 className="country-name">{country.toUpperCase()}</h1>
           <span className="total-confirmed">{Intl.NumberFormat('de-DE').format(totalConfirmed)}</span>
         </div>

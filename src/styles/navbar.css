@@ -1,0 +1,56 @@
+nav{
+    background-color: #4369B2;
+    
+   display: flex; 
+    gap: 10rem;
+    margin-bottom: 1rem;
+    max-width: 5rem;
+    padding-top: 1rem;
+    
+    
+    
+}
+
+.location{
+    color: white;
+   
+    
+}
+
+.location-path{
+    display: flex;
+     margin-left: 0.5rem; 
+   
+    
+}
+
+.back{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.back .fas{
+    font-size: 1.5rem;
+    
+   
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: -4rem;
+    
+    
+  
+}
+
+
+
+
+
+

@@ -23,62 +23,26 @@
 .country-name {
   font-weight: bolder;
   font-size: 1.1rem;
-  margin-left: -1rem;
+  transform: scale(1.2);
   width: 7rem;
   text-align: center;
   font-family: 'lato', sans-serif;
   margin-top: -2rem;
   color: #1a2a46;
+  margin-left: 4rem;
 }
 
 .total-confirmed {
   font-weight: bold;
-  margin-left: -3rem;
+  
   color: white;
   font-family: 'lato', sans-serif;
   font-size: 1.2rem;
 }
 
 .info-icon {
-  transform: translate(7rem, -8rem);
+  transform: translate(9rem, -8rem);
   width: 2rem;
   height: 2rem;
 }
 
-@media (min-width: 801px) {
-  .country {
-    margin-left: -3rem;
-  }
-
-  .country-data {
-    margin-top: -7rem;
-  }
-
-  .total-confirmed {
-    margin-left: 2rem;
-    width: 10rem;
-    font-size: 2rem;
-    transform: translate(0, -2rem);
-  }
-
-  .country-name {
-    width: 7rem;
-    padding-right: 4rem;
-    text-align: start;
-    margin-left: -5rem;
-    font-size: 1.3rem;
-    color: #1a2a46;
-  }
-
-  .info-icon {
-    margin-left: -3rem;
-    margin-top: 5rem;
-    padding-top: 4rem;
-  }
-}
-
-@media (min-width: 556px) {
-  .info-icon {
-    margin-left: 5rem;
-  }
-}

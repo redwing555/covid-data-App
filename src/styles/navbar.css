@@ -17,7 +17,7 @@ nav {
 
 .location-path {
   display: flex;
-  margin-left: 0.5rem;
+  margin-left: 4rem;
 }
 
 .back {
@@ -32,12 +32,6 @@ nav {
 .icons {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   margin-left: -4rem;
-}
-
-@media (min-width: 801px) {
-  .back {
-    margin-left: 5rem;
-  }
 }

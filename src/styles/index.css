@@ -4,7 +4,19 @@
 
 body {
   background-color: #4369b2;
-  margin: 0;
-  padding: 0;
+  
+  
   overflow-x: hidden;
+  margin-left: -10px;
+  margin-right: -13px;
+  
+  
+  
+  
 }
+html{
+ width: 129%;
+ margin-left: -0.5rem;
+}
+
+

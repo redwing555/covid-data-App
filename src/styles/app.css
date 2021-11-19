@@ -1,36 +1,6 @@
 
 .app {
   background-color: #4369b2;
-  width: 147%;
-  height: 100%;
-  margin-left: 0.8rem;
+
 }
 
-@media (min-width: 802px) {
-  .app {
-    background-color: #4369b2;
-    max-width: 200% !important;
-    height: 100%;
-    margin-left: -20px !important;
-  }
-}
-
-@media (min-width: 556px) {
-  .app {
-    background-color: #4369b2;
-    max-width: 99%;
-    height: 100%;
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 900px) {
-  body {
-    width: 120%;
-    margin-left: 1rem;
-  }
-
-  .app {
-    margin-left: 5rem;
-  }
-}

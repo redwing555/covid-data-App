@@ -16,7 +16,7 @@
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
-  margin-left: 5rem;
+  margin-left: 11.5rem;
 }
 
 .icons {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-left: 6rem;
+  margin-left: 15rem;
 }
 
 .fab {
@@ -42,22 +42,3 @@ small {
   margin-left: 5rem;
 }
 
-@media (min-width: 801px) {
-  .footer-container {
-    display: flex;
-  }
-
-  .creators p {
-    margin-left: 40rem;
-  }
-
-  .icons {
-    margin-left: 40rem;
-  }
-}
-
-@media (min-width: 556px) {
-  .footer {
-    margin-top: 400rem;
-  }
-}

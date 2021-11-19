@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
 }
 
 .date {
@@ -24,10 +24,13 @@
 }
 
 .table-infos li {
-  margin-left: -3rem;
+  margin-left: -4rem;
+  padding-left: -4rem;
+  height: 5rem;
   padding: 1rem;
   color: white;
   display: table;
+  width: 34rem;
 }
 
 .data-of {
@@ -43,6 +46,7 @@
 .country-details {
   display: flex;
   gap: 1rem;
+  
 }
 
 .data-of-wrapper {
@@ -64,12 +68,13 @@
   color: white;
   font-weight: bold;
   z-index: 11;
+  transform: scale(1.5);
 }
 
 .country-map-header {
   width: 10rem;
   height: 10rem;
-  margin-left: 3.8rem;
+  margin-left: 7rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   opacity: 0.7;
@@ -140,88 +145,3 @@
   padding-top: 0.5rem;
 }
 
-@media (min-width: 900px) {
-  .data-of {
-    text-align: center;
-    padding-top: 1rem;
-    margin-left: 35rem;
-  }
-
-  .table-infos {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin-left: 3rem;
-  }
-
-  .data-of-wrapper {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
-
-  .country-total {
-    margin-left: 4rem;
-  }
-
-  .header-wrapper {
-    padding-left: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    z-index: 11;
-  }
-
-  .country-map-header {
-    width: 15rem;
-    height: 15rem;
-    margin-left: 10rem;
-    opacity: 0.6;
-    transform: scale(1.5);
-    z-index: 0;
-  }
-
-  .country-header-info {
-    margin-left: 20rem;
-    margin-top: 10rem;
-    transform: scale(2);
-  }
-
-  .metric-value {
-    margin-right: 20rem;
-    font-size: 2rem;
-  }
-
-  .date-value {
-    margin-right: 20rem;
-    font-size: 2rem;
-  }
-
-  .date {
-    font-size: 2rem;
-    margin-left: 5rem;
-  }
-
-  .metric {
-    margin-left: 5rem;
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    margin-bottom: -2rem;
-  }
-
-  .info-ic {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .icon-chev {
-    float: right;
-    margin-right: 5rem;
-    padding-bottom: 3rem;
-  }
-
-  .country-details {
-    display: flex;
-    gap: 19rem;
-  }
-}

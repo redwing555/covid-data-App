@@ -88,8 +88,8 @@
   float: left;
 }
 
-.icon-chev{
-  padding:0;
+.icon-chev {
+  padding: 0;
   margin-left: 1rem;
   width: 2rem;
   height: 2rem;
@@ -149,7 +149,6 @@
     margin-left: 1rem;
   }
 
-
   .country-total {
     margin-left: 4rem;
   }
@@ -196,21 +195,16 @@
   }
 
   .info-ic {
-    
     width: 2rem;
     height: 2rem;
     float: left;
-    
-    
   }
 
-  .icon-chev{
-
-  
-  width: 3rem;
-  height: 3rem;
-  margin-left: 0rem;
-  align-self: center;
+  .icon-chev {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0;
+    align-self: center;
   }
 
   .country-details {

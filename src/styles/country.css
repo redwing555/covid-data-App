@@ -34,7 +34,6 @@
 
 .total-confirmed {
   font-weight: bold;
-  
   color: white;
   font-family: 'lato', sans-serif;
   font-size: 1.2rem;
@@ -45,4 +44,3 @@
   width: 2rem;
   height: 2rem;
 }
-

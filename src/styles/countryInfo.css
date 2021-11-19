@@ -25,7 +25,6 @@
 
 .table-infos li {
   margin-left: -4rem;
-  padding-left: -4rem;
   height: 5rem;
   padding: 1rem;
   color: white;
@@ -46,7 +45,6 @@
 .country-details {
   display: flex;
   gap: 1rem;
-  
 }
 
 .data-of-wrapper {
@@ -144,4 +142,3 @@
   font-family: 'lato', sans-serif;
   padding-top: 0.5rem;
 }
-

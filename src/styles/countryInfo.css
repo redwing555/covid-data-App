@@ -151,6 +151,7 @@
     .data-of{
         text-align: center;
         padding-top: 1rem;
+        margin-left: 35rem;
 
     
     }
@@ -160,6 +161,10 @@
         margin-top: 1rem;
         margin-left: 1rem;
         
+    }
+
+    .country-total{
+        margin-left: 4rem;
     }
 
     .header-wrapper{
@@ -205,7 +210,7 @@
     }
 
     .info-ic{
-        margin-right: 3rem;
+        margin-left: 3rem;
         width: 2rem;
         height: 2rem;
         margin-top: 1.5rem;

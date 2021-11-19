@@ -1,6 +1,7 @@
 .footer-container {
     display: flex;
     gap: 1rem;
+    
   }
   
   .footer {
@@ -56,12 +57,12 @@
 
     .creators p {
         
-        margin-left: 30rem;
+        margin-left: 40rem;
     
       }
 
       .icons{
-          margin-left: 30rem;
+          margin-left: 40rem;
           
       }
       

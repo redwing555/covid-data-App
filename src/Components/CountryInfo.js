@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import {
-  useHistory, Route, Switch, useRouteMatch,
-} from 'react-router-dom';
+import React, { useEffect } from 'react';
+// import {
+//   Route, Switch,
+// } from 'react-router-dom';
 import { FaVirus } from 'react-icons/fa';
 import { BiChevronRightCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import LineChart from './Plot';
-import { dataLoading, loadHistoryThunk } from '../redux/covid/covid';
+import { dataLoading } from '../redux/covid/covid';
 import '../styles/countryInfo.css';
 
 const CountryInfo = ({ current, image }) => {
   const dispatch = useDispatch();
-  const historyData = useSelector((state) => state.covidReducer.currentHistory);
 
   const loading = useSelector((state) => state.covidReducer.loading);
   const country = useSelector((state) => state.covidReducer.countries[current]);
@@ -64,25 +62,8 @@ const CountryInfo = ({ current, image }) => {
 
   ];
 
-  const [plotData, setPlotData] = useState([]);
-  const history = useHistory();
-  const { path, url } = useRouteMatch();
-
-  const handleRoute = (route) => {
-    history.push(route);
-  };
-
-  const handlePlotData = (category) => {
-    const data = Object.keys(historyData).map((date) => {
-      const tmp = historyData[date].countries[current][category];
-      return tmp;
-    });
-    setPlotData(data);
-  };
-
   useEffect(() => {
     dispatch(dataLoading());
-    dispatch(loadHistoryThunk(current));
   }, [dispatch]);
 
   return (
@@ -106,70 +87,43 @@ const CountryInfo = ({ current, image }) => {
 
       </div>
 
-      <Switch>
-        <Route exact path={path}>
-          <div className="data-of-wrapper">
-            <span className="data-of">
-              {' '}
-              Covid Stats of
-              {' '}
-              {current}
-              {' '}
-            </span>
+      <div className="data-of-wrapper">
+        <span className="data-of">
+          {' '}
+          Covid Stats of
+          {' '}
+          {current}
+          {' '}
+        </span>
 
-          </div>
-          <ul className="table-infos">
-            <li className="table-header">
-              <div className="date">Date</div>
-              <div className="date-value">{country.date}</div>
-            </li>
-            {loading && (
-            <span>
-              <FaVirus className="virus" />
-              {' '}
-            </span>
-            )}
-            {!loading && rows.map((row) => (
+      </div>
+      <ul className="table-infos">
+        <li className="table-header">
+          <div className="date">Date</div>
+          <div className="date-value">{country.date}</div>
+        </li>
+        {!loading && (
+        <span>
+          <FaVirus className="virus" />
+          {' '}
+        </span>
+        )}
+        {loading && rows.map((row) => (
 
-              <li
-                className="country-details"
-                key={row.id}
-                onClick={() => {
-                  handleRoute(`${url}/${row.url}`);
-                  handlePlotData(row.category);
-                }}
-                aria-hidden="true"
-              >
+          <li
+            className="country-details"
+            key={row.id}
+            aria-hidden="true"
+          >
 
-                <div className="metric">{row.text}</div>
-                <div className="metric-value">{row.value}</div>
-                <div>
-                  <BiChevronRightCircle size={20} className="info-ic" color="white" />
-                </div>
-              </li>
-            ))}
-          </ul>
-
-        </Route>
-        <Route plotData={plotData} exact path={`${path}/newDailyCases`}>
-          <LineChart plotData={plotData} country={current} title="new Cases" />
-        </Route>
-        <Route plotData={plotData} exact path={`${path}/newDailyDeaths`}>
-          <LineChart plotData={plotData} country={current} title="new Deaths" />
-        </Route>
-        <Route exact path={`${path}/newDailyRecovered`}>
-          <LineChart plotData={plotData} country={current} title="new Recoveries" />
-        </Route>
-        <Route exact path={`${path}/confirmedCases`}>
-          <LineChart plotData={plotData} country={current} title="today new Cases" />
-        </Route>
-        <Route exact path={`${path}/confirmedDeaths`}>
-          <LineChart plotData={plotData} country={current} title="today new Deaths" />
-        </Route>
-        <Route exact path={`${path}/confirmedRecoveries`}>
-          <LineChart plotData={plotData} country={current} title="today new Recoveries" />
-        </Route>
-      </Switch>
+            <div className="metric">{row.text}</div>
+            <div className="metric-value">{row.value}</div>
+            <div>
+              <BiChevronRightCircle size={20} className="info-ic" color="white" />
+            </div>
+          </li>
+        ))}
+      </ul>
 
     </div>
   );
@@ -177,6 +131,7 @@ const CountryInfo = ({ current, image }) => {
 
 CountryInfo.defaultProps = {
   current: 'No Country',
+
 };
 
 CountryInfo.propTypes = {

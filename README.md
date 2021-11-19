@@ -1,59 +1,76 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Covid Tracker App
+This App is a Covid data tracking App by Country , the data is from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html), more interesting functionalities to come ...
 
-# Project Name
-
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+![screenshot](./img/React-App-1.png)
+![screenshot](./img/Reacr-app.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- JSX
+- Redux
+- [CORONAVIRUS DATA API - COVID-19 TRACKING PROJECT](https://covid19tracking.narrativa.com/index_en.html)
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+- [Live Demo Link](https://peaceful-hawking-5d61df.netlify.app/#/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**The project comes shipped with linters config for html and css, so ensure you have lighthouse, ESlint, Webhint**
+**and Stylelint installed on your local environment**
+
+- **To get a local copy of the repository please run the following commands on your terminal:**
+- **$ git clone https://github.com/...**
+- **$ cd ...**
+- **$ git checkout ...**
+- **$ run npm install to couple all dependacies**
 
 
-To get a local copy up and running follow these simple example steps.
+## Available Scripts
 
-### Prerequisites
+In the project directory, you can run:
 
-### Setup
+### `npm start`
 
-### Install
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Usage
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Run tests
+### `npm test`
 
-### Deployment
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
+### `npm run eject`
 
-## Authors
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-👤 **Author1**
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-👤 **Author2**
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Author
+
+👤 **Hichami Houssam**
+
+- GitHub: [@redwing555](https://github.com/redwing555)
+- LinkedIn: [Houssam Hichami](https://www.linkedin.com/in/houssam-hichami/)
 
 ## 🤝 Contributing
 
@@ -66,11 +83,9 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for a great design.
+- [Narrativa API](https://covid19tracking.narrativa.com/index_en.html) for creating the API.
+- my dog Perry for the comforting lick here and there
 ## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+- This project is [MIT](./LICENSE) licensed.
+- This project is also licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/).

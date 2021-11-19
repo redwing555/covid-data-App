@@ -67,8 +67,6 @@
   to { transform: rotate(360deg); }
 }
 
-
-/* SPINNER JUST FOR DEMO */
 .spinner {
   display: inline-block;
   border-radius: 50%;

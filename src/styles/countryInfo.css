@@ -26,6 +26,7 @@
   margin-left: -3rem;
   padding: 1rem;
   color: white;
+  display: table;
 }
 
 .data-of {
@@ -84,13 +85,12 @@
 }
 
 .info-ic {
-  margin-right: 5rem;
-  float: left;
+  text-align: right;
 }
 
 .icon-chev {
   padding: 0;
-  margin-left: 1rem;
+  float: right;
   width: 2rem;
   height: 2rem;
 }
@@ -100,6 +100,8 @@
   background-color: transparent !important;
   font-family: 'lato', sans-serif;
   margin-left: 1rem;
+  width: 2rem;
+  float: left;
 }
 
 .virus {
@@ -134,6 +136,7 @@
   font-weight: bold;
   background-color: transparent !important;
   font-family: 'lato', sans-serif;
+  padding-top: 0.5rem;
 }
 
 @media (min-width: 801px) {
@@ -192,19 +195,19 @@
   .metric {
     margin-left: 5rem;
     font-size: 1.5rem;
+    padding-top: 2rem;
+    margin-bottom: -2rem;
   }
 
   .info-ic {
     width: 2rem;
     height: 2rem;
-    float: left;
   }
 
   .icon-chev {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 0;
-    align-self: center;
+    float: right;
+    margin-right: 5rem;
+    padding-bottom: 3rem;
   }
 
   .country-details {

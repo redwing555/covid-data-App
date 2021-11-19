@@ -84,7 +84,15 @@
 }
 
 .info-ic {
-  margin-left: 4.5rem;
+  margin-right: 5rem;
+  float: left;
+}
+
+.icon-chev{
+  padding:0;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .metric {
@@ -141,6 +149,7 @@
     margin-left: 1rem;
   }
 
+
   .country-total {
     margin-left: 4rem;
   }
@@ -187,10 +196,21 @@
   }
 
   .info-ic {
-    margin-left: 1rem;
+    
     width: 2rem;
     height: 2rem;
-    margin-top: 2rem;
+    float: left;
+    
+    
+  }
+
+  .icon-chev{
+
+  
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0rem;
+  align-self: center;
   }
 
   .country-details {

@@ -115,7 +115,7 @@ const CountryInfo = ({ current, image }) => {
 
             <div className="metric">{row.text}</div>
             <div className="metric-value">{row.value}</div>
-            <div>
+            <div className="icon-chev">
               <BiChevronRightCircle size={20} className="info-ic" color="white" />
             </div>
           </li>

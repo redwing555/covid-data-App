@@ -21,11 +21,12 @@
 
 .country-name {
   font-weight: bolder;
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.1rem;
   margin-left: 1rem;
-  color: white;
   font-family: 'lato', sans-serif;
+  margin-top: -2rem;
+  text-align: start;
+  color: #1a2a46;
 }
 
 .total-confirmed {
@@ -33,6 +34,7 @@
   margin-left: 3rem;
   color: white;
   font-family: 'lato', sans-serif;
+  font-size: 1.2rem;
 }
 
 .info-icon {
@@ -45,9 +47,15 @@
   .total-confirmed {
     margin-left: 4rem;
     width: 10rem;
+    font-size: 2rem;
+    transform: translate(0, -2rem);
   }
 
   .country-name {
-    width: 12rem;
+    width: 17rem;
+    padding-right: 4rem;
+    text-align: start;
+    font-size: 1.3rem;
+    color: #1a2a46;
   }
 }

@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-// import {
-//   Route, Switch,
-// } from 'react-router-dom';
 import { FaVirus } from 'react-icons/fa';
 import { BiChevronRightCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';

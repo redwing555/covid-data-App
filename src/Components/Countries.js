@@ -42,7 +42,7 @@ const Countries = ({
       </div>
 
       <Query handleChange={handleChange} />
-      {loading && <span><FaVirus className="virus" /></span> }
+
       <ul className="countries-list">
         {filtered && filtered.map((key) => (
           (key !== 'pistolet')

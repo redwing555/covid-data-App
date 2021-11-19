@@ -6,10 +6,10 @@ import '../styles/navbar.css';
 const Navbar = () => {
   const history = useHistory();
   const location = useLocation();
-
+  /* eslint-disable  */
+ 
   return (
     <nav>
-
       <div className="location-path">
         {(location.pathname !== '/') ? <button className="back" type="button" onClick={history.goBack}><BsChevronLeft className="fas fa-chevron-left"> </BsChevronLeft></button> : <span className="back">Countries</span>}
         {' '}
@@ -20,6 +20,7 @@ const Navbar = () => {
 
     </nav>
   );
+   /* eslint-enable  */
 };
 
 export default Navbar;

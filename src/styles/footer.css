@@ -55,3 +55,9 @@ small {
     margin-left: 40rem;
   }
 }
+
+@media (min-width: 556px) {
+  .footer {
+    margin-top: 400rem;
+  }
+}

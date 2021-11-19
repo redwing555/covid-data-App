@@ -35,3 +35,9 @@ nav {
   gap: 1rem;
   margin-left: -4rem;
 }
+
+@media (min-width: 801px) {
+  .back {
+    margin-left: 5rem;
+  }
+}

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding-left: -5rem;
-  padding: 1.5rem;
   width: 15rem;
   gap: 0.5rem;
 }
@@ -10,7 +9,7 @@
 .country {
   border: none;
   background-color: transparent;
-  width: 185px;
+  width: 200px;
   height: 17rem;
 }
 
@@ -29,7 +28,6 @@
   text-align: center;
   font-family: 'lato', sans-serif;
   margin-top: -2rem;
-  text-align: start;
   color: #1a2a46;
 }
 
@@ -48,16 +46,14 @@
 }
 
 @media (min-width: 801px) {
-  .country{
+  .country {
     margin-left: -3rem;
-   
-   
-
   }
 
-  .country-data{
+  .country-data {
     margin-top: -7rem;
   }
+
   .total-confirmed {
     margin-left: 2rem;
     width: 10rem;
@@ -78,6 +74,11 @@
     margin-left: -3rem;
     margin-top: 5rem;
     padding-top: 4rem;
-    
+  }
+}
+
+@media (min-width: 556px) {
+  .info-icon {
+    margin-left: 5rem;
   }
 }

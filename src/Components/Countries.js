@@ -44,7 +44,7 @@ const Countries = ({
       <Query handleChange={handleChange} />
 
       <ul className="countries-list">
-        {filtered && filtered.map((key) => (
+        { filtered && filtered.map((key) => (
           (key !== 'pistolet')
               && (
               <li key={key} className="countries">

@@ -7,8 +7,8 @@
 }
 
 .countries-list li {
-  flex: 10rem;
-  padding-top: 1rem;
+  flex: 11rem;
+  padding: 1rem;
   padding-bottom: 1rem;
   background-color: #4268af;
 }
@@ -20,8 +20,12 @@
 
 .header-wrapper {
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
   background-color: #5889e5;
+  width: 105%;
+  margin-right: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .world-map {
@@ -29,7 +33,6 @@
   height: 11rem;
   margin-left: 2rem;
   opacity: 0.7;
-  
 }
 
 .world-info {
@@ -73,9 +76,13 @@
   box-shadow: inset -2px 0 0 2px #0bf;
 }
 
-@media (min-width: 801px) {
+.info-icon {
+  margin-left: 5rem;
+}
+
+@media (min-width: 900px) {
   .world-info {
-    margin-left: 30rem;
+    margin-left: 10rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     transform: scale(2);
@@ -100,7 +107,7 @@
   }
 
   .world-cases-value {
-    margin-left: 5.5rem;
+    margin-left: 5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -109,9 +116,6 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    
-    margin-top: 0;
-    margin-left: -2.5rem;
   }
 
   .countries-list li {
@@ -126,7 +130,7 @@
   .country-map {
     transform: scale(2.5);
     margin-top: 4rem;
-    margin-left: 7rem;
+    margin-left: 15rem;
   }
 
   .country-data {
@@ -142,77 +146,38 @@
   }
 
   .info-icon {
-    transform: translate(15rem, -11rem);
+    margin-left: 9rem;
   }
 }
 
-@media (min-width: 802px) {
-  .world-info {
-    margin-left: 20rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    transform: scale(2);
-
-  }
-
-  .world-map {
-    
-    
-    opacity: 0.5;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
-  }
-
-  .world-cases {
-    margin-bottom: 0.5rem;
-    margin-left: 5rem;
-  }
-
-  .icon-virus {
-    margin-left: 8rem;
-  }
-
-  .world-cases-value {
-    margin-left: 5.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
+@media (min-width: 556px) {
   .countries-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-    margin-left: -2.5rem;
-  }
-
-  .countries-list li {
-    flex: 24rem;
+    flex: 40%;
     padding: 1rem;
+    margin-left: 1rem;
+    height: 25rem;
     cursor: pointer;
 
     /* padding: 3rem; */
   }
 
-  .country-map {
-    transform: scale(2.5);
-    margin-top: 4rem;
-    margin-left: 7rem;
+  .info-icon {
+    transform: translate(5rem, -10rem);
   }
+}
 
-  .country-data {
-    margin-left: 20rem;
-    margin-bottom: 5rem;
-    padding-bottom: 2rem;
-  }
+@media (min-width: 801px) {
+  .countries-list {
+    flex: 40%;
+    padding: 1rem;
+    margin-left: 1rem;
+    height: 25rem;
+    cursor: pointer;
 
-  .country-name {
-    margin-top: -3rem;
-    padding-bottom: 1rem;
-    margin-left: 4rem;
+    /* padding: 3rem; */
   }
 
   .info-icon {
-    transform: translate(15rem, -11rem);
+    transform: translate(5rem, -10rem);
   }
 }

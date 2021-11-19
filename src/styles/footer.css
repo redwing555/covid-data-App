@@ -1,71 +1,57 @@
 .footer-container {
-    display: flex;
-    gap: 1rem;
-    
-  }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    background-color: #4369B2;
-    
-  }
-  
+  display: flex;
+  gap: 1rem;
+}
 
-  
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  background-color: #4369b2;
+}
+
+.creators p {
+  color: black;
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 6rem;
+}
+
+.fab {
+  color: black;
+  width: 2rem;
+  height: 2rem;
+}
+
+small {
+  align-self: center;
+  padding-bottom: 1rem;
+  font-family: 'Red Hat Mono', monospace;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-left: 5rem;
+}
+
+@media (min-width: 801px) {
+  .footer-container {
+    display: flex;
+  }
+
   .creators p {
-    color: black;
-    font-family: 'Red Hat Mono', monospace;
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: center;
-    margin-left: 5rem;
-
-    
+    margin-left: 40rem;
   }
-  
+
   .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-left: 6rem;
+    margin-left: 40rem;
   }
-  
-  .fab {
-    color: black;
-    width: 2rem;
-    height: 2rem;
-  }
-  
-  small {
-    align-self: center;
-    padding-bottom: 1rem;
-    font-family: 'Red Hat Mono', monospace;
-    letter-spacing: 0.3rem;
-    word-spacing: 1rem;
-    margin-left: 5rem;
-  }
-
-  @media (min-width:801px)  { 
-
-    .footer-container{
-        display: flex;
-        
-    }
-
-    .creators p {
-        
-        margin-left: 40rem;
-    
-      }
-
-      .icons{
-          margin-left: 40rem;
-          
-      }
-      
- }
-
-  
+}

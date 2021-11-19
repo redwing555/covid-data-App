@@ -1,5 +1,5 @@
 # Covid Tracker App
-This App is a Covid data tracking App by Country , the data is from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html), more interesting functionalities to come ...
+This Mobile-first App is a Covid data tracking App by Country , the data is from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html), more interesting functionalities to come ...
 
 ![screenshot](./img/React-App-1.png)
 ![screenshot](./img/Reacr-app.png)

@@ -60,11 +60,11 @@
   margin-left: 2.5rem;
   margin-top: 1rem;
   overflow: hidden;
-  transition-duration: 0.1s;
+  transition-duration: 0.5s;
 }
 
 @keyframes rotate {
-  to { transform: rotate(360deg); }
+  to { transform: rotate(90deg); }
 }
 
 .spinner {

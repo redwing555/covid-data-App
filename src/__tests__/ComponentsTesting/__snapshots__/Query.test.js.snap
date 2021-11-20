@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searching renderers search correctly 1`] = `
+<form
+  className="form"
+>
+  <span
+    className="search-by"
+  >
+    Stats by Country
+  </span>
+  <input
+    className="input-search"
+    onChange={[Function]}
+    placeholder="Enter country name"
+    type="text"
+  />
+</form>
+`;

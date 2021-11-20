@@ -1,0 +1,82 @@
+.countries-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: -22px;
+  margin-right: -5rem;
+}
+
+.countries-list li {
+  flex: 11rem;
+  padding-bottom: 1rem;
+  background-color: #4268af;
+}
+
+.countries-list li:nth-child(4n),
+.countries-list li:nth-child(4n+1) {
+  background-color: #5889e6;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 10rem;
+  background-color: #5889e5;
+  width: 115%;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.world-map {
+  width: 11rem;
+  height: 11rem;
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+
+.world-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  transform: scale(1.5);
+}
+
+.world-cases {
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-family: 'lato', sans-serif;
+}
+
+.world-cases-value {
+  font-family: 'lato', sans-serif;
+  font-weight: bolder;
+  margin-right: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.icon-virus {
+  animation: rotate 1.5s linear infinite;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+@keyframes rotate {
+  to { transform: rotate(90deg); }
+}
+
+.spinner {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: inset -2px 0 0 2px #0bf;
+}
+
+.info-icon {
+  margin-left: 5rem;
+}

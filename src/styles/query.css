@@ -1,0 +1,47 @@
+.search-by {
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.input-search {
+  border: none;
+  width: 15rem;
+  margin-left: 2rem;
+  height: 1.5rem;
+  background-color: #35548b;
+}
+
+input[type="text"] {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  font-family: 'lato', sans-serif;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+::placeholder {
+  font-weight: lighter;
+  font-size: 1rem;
+  color: white;
+  font-family: 'lato', sans-serif;
+}
+
+:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.form {
+  padding: 1.5rem;
+  width: 102%;
+  margin-top: 0.8rem;
+  background-color: #35548b;
+  margin-bottom: 1rem;
+  margin-left: 1.3rem;
+}

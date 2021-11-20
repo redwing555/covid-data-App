@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders !  1`] = `
+<div
+  className="app"
+>
+  <nav>
+    <div
+      className="location-path"
+    >
+      <span
+        className="back"
+      >
+        Countries
+      </span>
+       
+      <span
+        className="location"
+      >
+        /
+      </span>
+    </div>
+  </nav>
+  <div>
+    <div
+      className="header-wrapper"
+    >
+      <div
+        className="world-header"
+      >
+        <img
+          alt="world map"
+          className="world-map"
+          src="/worldmap.svg"
+        />
+      </div>
+      <div
+        className="world-info"
+      >
+        <span
+          className="world-cases"
+        >
+          The world has 
+        </span>
+        <span>
+           
+          NaN
+        </span>
+        <span
+          className="world-cases"
+        >
+          Coronavirus Cases 
+        </span>
+      </div>
+    </div>
+    <form
+      className="form"
+    >
+      <span
+        className="search-by"
+      >
+        Stats by Country
+      </span>
+      <input
+        className="input-search"
+        onChange={[Function]}
+        placeholder="Enter country name"
+        type="text"
+      />
+    </form>
+    <span>
+      ...loading
+    </span>
+    <ul
+      className="countries-list"
+    />
+  </div>
+</div>
+`;
